@@ -1,0 +1,68 @@
+
+
+body{
+    background-image: url("https://w-dog.ru/wallpapers/13/16/435937954184316.jpg");
+    background-size: cover;
+    font-family: 'Supermercado One', cursive;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 128px 128px 128px;
+    grid-template-columns: 128px 128px 128px;
+    margin-top: 80px;
+    margin-right: 100px;
+}
+.card{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+.front,
+.back{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    border-radius: 25px;
+    position: absolute;
+}
+.front {
+    background: sienna;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: peru;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+p{
+    text-align: center;
+    font-size: 16pt;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
